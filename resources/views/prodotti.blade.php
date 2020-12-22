@@ -3,23 +3,26 @@
 @section('title-tab', 'Prodotti')
 
 @section('content')
-    <div class="container">
-        <div class="cards">
+    <main id="section-prodotti">
+        <div class="container">
+            <div class="cards">
 
-            @foreach ($pasta as $item)
-                <div class="card">
+                @foreach ($pasta as $item)
+                    <div class="card">
 
-                    <div class="wp-img-card">
-                        <img src="{{ $item['src'] }}" alt="">
-                        <div class="overlay">
-                            <p>{{ $item['titolo'] }}</p>
+                        <div class="wp-img-card">
+                            <img src="{{ $item['src'] }}" alt="">
+                            <div class="overlay">
+                                <p>{{ $item['titolo'] }}</p>
+                            </div>
                         </div>
+
+
                     </div>
+                @endforeach
 
-
-                </div>
-            @endforeach
-
+            </div>
         </div>
-    </div>
+    </main>
+
 @endsection
