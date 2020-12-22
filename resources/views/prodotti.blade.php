@@ -11,11 +11,15 @@
 
                     <div class="wp-img-card">
                         <img src="{{ $item['src'] }}" alt="">
+                        <div class="overlay">
+                            <p>{{ $item['titolo'] }}</p>
+                        </div>
                     </div>
+
 
                 </div>
             @endforeach
-            
+
         </div>
     </div>
 @endsection
