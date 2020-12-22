@@ -3,5 +3,19 @@
 @section('title-tab', 'Prodotti')
 
 @section('content')
-    <h1>Prodotti</h1>
+    <div class="container">
+        <div class="cards">
+
+            @foreach ($pasta as $item)
+                <div class="card">
+
+                    <div class="wp-img-card">
+                        <img src="{{ $item['src'] }}" alt="">
+                    </div>
+
+                </div>
+            @endforeach
+            
+        </div>
+    </div>
 @endsection
