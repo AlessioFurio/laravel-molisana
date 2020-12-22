@@ -17,6 +17,11 @@ ul {
   margin: 0 auto;
 }
 
+.active {
+  background-color: #b3e5fc;
+  border-radius: 10px;
+}
+
 header .logo {
   width: 250px;
   height: 145px;
@@ -110,4 +115,13 @@ footer h1 {
 footer a {
   color: gray;
   font-size: 20px;
+}
+
+.wp-img-footer {
+  width: 100%;
+}
+.wp-img-footer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
